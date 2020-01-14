@@ -8,9 +8,9 @@ const tileClasses = {
   'end': 'tile-end'
 }
 
-function Tile({ type, visited }) {
+function Tile({ type, visited, onClick }) {
   return (
-    <span className={`${tileClasses[type]} ${visited ? 'tile-visited' : 'tile-unvisited'}`}></span>
+    <span className={`tile ${tileClasses[type]} ${visited ? 'tile-visited' : 'tile-unvisited'}`} onClick={onClick}></span>
   )
 }
 

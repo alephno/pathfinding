@@ -1,28 +1,44 @@
-:root {
-  --gridViewWidth: 85vh;
-  --gutter: 1px;
-  --noColumns: 20;
-
-  --ratioA: 1;
-  --ratioB: 1;
-
-  --rowHieght: calc((var(--gridViewWidth) - (var(--noColumns - 1) * var(--gutter)) / var(--noColumns)))
+body {
+  background-color: #FEF6EB;
 }
 
 .path-grid {
-  width: var(--gridViewWidth);
-  height: var(--gridViewWidth);
   display: grid;
-  grid-template-columns: repeat(var(--noColumns), 1fr);
-  grid-auto-rows: var(--rowHeight);
-  grid-gap: var(--gutter)
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 0;
+  height: 85vh;
+  width: 85vh;
+  grid-auto-rows: calc(85vh / 20);
+  background-color: #FEF6EB;
 }
 
-.path-grid > * {
-  background: orangered;
-  min-width: 10px;
-  min-height: 10px;
-  width: 100%;
+.tile {
+  border-radius: 5px;
+}
+
+.tile-empty {
+  background-color:  #BEB9B5;
+}
+
+.tile-start {
+  background-color: #529964;
+}
+
+.tile-wall {
+  background-color: #525564;
+}
+
+.tile-end {
+  background-color:  #C25B56;
+}
+
+.tile-visited {
+  border: 1px solid #96C0CE;
+  background-color: #96C0CE;
+}
+
+.tile-unvisited{
+  border: 1px solid  #74828F;
 }
 
 .algo-controls {
