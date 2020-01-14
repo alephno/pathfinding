@@ -1,0 +1,30 @@
+:root {
+  --gridViewWidth: 85vh;
+  --gutter: 1px;
+  --noColumns: 20;
+
+  --ratioA: 1;
+  --ratioB: 1;
+
+  --rowHieght: calc((var(--gridViewWidth) - (var(--noColumns - 1) * var(--gutter)) / var(--noColumns)))
+}
+
+.path-grid {
+  width: var(--gridViewWidth);
+  height: var(--gridViewWidth);
+  display: grid;
+  grid-template-columns: repeat(var(--noColumns), 1fr);
+  grid-auto-rows: var(--rowHeight);
+  grid-gap: var(--gutter)
+}
+
+.path-grid > * {
+  background: orangered;
+  min-width: 10px;
+  min-height: 10px;
+  width: 100%;
+}
+
+.algo-controls {
+  margin: .1em 0 .1em 0em;
+}
