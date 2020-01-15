@@ -20,6 +20,15 @@ body {
   background-color:  #BEB9B5;
 }
 
+.tile-visited {
+  border: 1px solid #96C0CE;
+  background-color: #96C0CE;
+}
+
+.tile-unvisited{
+  border: 1px solid  #74828F;
+}
+
 .tile-start {
   background-color: #529964;
 }
@@ -32,13 +41,8 @@ body {
   background-color:  #C25B56;
 }
 
-.tile-visited {
-  border: 1px solid #96C0CE;
-  background-color: #96C0CE;
-}
-
-.tile-unvisited{
-  border: 1px solid  #74828F;
+.tile-path {
+  background-color:  #C29964;
 }
 
 .algo-controls {

@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Controls() {
+function Controls({ handleSolve }) {
   return (
     <div className='algo-controls'>
       <select defaultValue="Dijkstra">
         <option value="Dijkstra">Dijkstra</option>
       </select>
-      <button>Start</button>
+      <button onClick={handleSolve}>Start</button>
       <button>Clear</button>
       <button>Reset</button>
     </div>

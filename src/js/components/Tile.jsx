@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 const tileClasses = {
   'empty': 'tile-empty',
   'wall': 'tile-wall',
+  'path': 'tile-path',
   'start': 'tile-start',
   'end': 'tile-end'
 }
