@@ -45,6 +45,14 @@ body {
   background-color:  #C29964;
 }
 
+.center > * {
+  margin: auto;
+}
+
 .algo-controls {
-  margin: .1em 0 .1em 0em;
+  width: 85vh;
+}
+
+.algo-controls > * {
+  margin-right: .5vh;
 }

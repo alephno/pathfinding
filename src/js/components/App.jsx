@@ -10,10 +10,10 @@ function App() {
   }
 
   return (
-    <>
-    <Controls handleSolve={handleSolve} />
-    <Grid width={20} height={20} animate={animate}/>
-    </>
+    <div className="center">
+      <Controls handleSolve={handleSolve} />
+      <Grid width={20} height={20} animate={animate}/>
+    </div>
   )
 }
 
