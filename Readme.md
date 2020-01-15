@@ -1,6 +1,6 @@
 # Visualize Pathfinding Algorithms
 
-[animation in action](https://github.com/alephno/pathfinding/blob/master/dijkstras.gif)
+[animation in action](https://github.com/alephno/pathfinding/blob/master/dijkstras.gif))
 
 Visualizes pathfinding algorithms on a grid. Currently only
 Dijkstra's algorithm is implemented.
