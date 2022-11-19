@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.6",
     "prop-types": "^15.7.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "build:dev": "webpack -w --mode development",
